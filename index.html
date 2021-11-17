@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Momentum</title>
+</head>
+<body>
+  <div id="bg"></div>
+  <h2 id="clock"></h2>
+  <form id="login-form" class="hidden">
+    <input type="text" placeholder="What is your name?" required maxlength=15/>
+    <p>
+      <input type="submit" value="Sign in" class="sign"/>
+      <i class="fas fa-door-closed" ></i>
+    </p>
+  </form>
+  <div id ="greeting" class="hidden">
+    <h1></h1>
+    <p>
+      <input type="submit" value="Sign in" class="sign"/>
+      <i class="fas fa-door-open"></i>
+    </p>
+  </div>
+  <form id="todo-form">
+    <input type="text" placeholder="Write a To Do and Press Enter" required/>
+  </form>
+  <ul id="todo-list">
+  </ul>
+  <div id="quote">
+    <span></span>
+    <br/>
+    <span></span>
+  </div>
+
+  <script src="js/greetings.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/bg.js"></script>
+  <script src="js/todo.js"></script>
+</body>
+</html> 
