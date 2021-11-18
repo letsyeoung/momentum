@@ -99,5 +99,14 @@ li {
 #quote {
   position: fixed;
   bottom:0;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+/* Weather */
+
+#weather {
+  position: fixed;
+  top:0;
+  right:0;
+  margin: 30px 30px 0 0;
 }

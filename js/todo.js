@@ -1,6 +1,5 @@
 /* todo */
 
-
 // 앨리먼트 불러오기
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
@@ -30,7 +29,7 @@ function paintToDo(newToDo) {
   const li = document.createElement("li");
   li.id = newToDo.id;
   const span = document.createElement("span");
-  span.innerText = newToDo.text;
+  span.innerHTML = `${newToDo.text} &ensp;`;
 
   //투두 삭제버튼 
   const button = document.createElement("button");

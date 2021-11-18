@@ -4,8 +4,10 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const Formin= document.querySelector("#todo-form");
 const h1 = document.querySelector("#greeting h1");
 const sign = document.querySelector("#greeting input")
+
 
 
 // 로그아웃
@@ -44,6 +46,8 @@ function paintGreetings(username) {
 
   h1.innerText = `${mention}, ${username}`;
   greeting.classList.remove("hidden");
+  Formin.classList.remove("hidden");
+
 
 }
 
