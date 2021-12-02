@@ -18,6 +18,8 @@ function onSign() {
 
 sign.addEventListener("click", onSign);
 
+
+
 // 엔터 누르면 해당값(이름)을 출력하고 저장하고 숨기기.
 function onLoginSubmit(event) {
   event.preventDefault();
@@ -25,13 +27,12 @@ function onLoginSubmit(event) {
   localStorage.setItem("username", username);
   paintGreetings(username); //출력하기
   loginForm.classList.add("hidden");
-
-
 }
+
+
 
 // 해당값(이름) 출력하기.
 function paintGreetings(username) {
-
   const date = new Date();
   const hours = date.getHours();
   let mention = `Hello`;
@@ -47,9 +48,8 @@ function paintGreetings(username) {
   h1.innerText = `${mention}, ${username}`;
   greeting.classList.remove("hidden");
   Formin.classList.remove("hidden");
-
-
 }
+
 
 
 // 사이트에 username 저장 처리
@@ -61,9 +61,3 @@ if(saveUserName === null) {
 } else {
   paintGreetings(saveUserName);
 }
-
-
-
-
-
-
